@@ -1,0 +1,19 @@
+{
+  "name": "gtts",
+  "version": "2.5.4",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "winston": "^3.19.0"
+  },
+  "bin": {
+    "gtts": "src/cli.ts"
+  }
+}
