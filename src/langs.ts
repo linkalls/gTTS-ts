@@ -1,5 +1,5 @@
-# Note: this file is generated
-_langs = {
+// Note: this file is generated
+export const langs: Record<string, string> = {
     "af": "Afrikaans",
     "am": "Amharic",
     "ar": "Arabic",
@@ -68,7 +68,8 @@ _langs = {
     "yue": "Cantonese",
     "zh-CN": "Chinese (Simplified)",
     "zh-TW": "Chinese (Traditional)"
-}
+};
 
-def _main_langs():
-    return _langs
+export function mainLangs(): Record<string, string> {
+    return langs;
+}
