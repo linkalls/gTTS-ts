@@ -1,3 +1,4 @@
+#!/usr/bin/env bun
 import { Command, Option } from "commander";
 import { gTTS, gTTSError } from "./tts";
 import { ttsLangs, fallbackDeprecatedLang } from "./lang";
