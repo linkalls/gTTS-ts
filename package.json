@@ -1,8 +1,16 @@
 {
   "name": "gtts",
   "version": "2.5.4",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "module": "src/index.ts",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
@@ -14,6 +22,6 @@
     "winston": "^3.19.0"
   },
   "bin": {
-    "gtts": "src/cli.ts"
+    "gtts": "dist/src/cli.js"
   }
 }
